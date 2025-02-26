@@ -87,6 +87,8 @@ namespace ModelToPixelArt.Module
             OnViewportSizeChanged += CreateRenderTexture;
             OnViewportModeChanged += SetIndicator;
 
+            _fov = captureCamera.orthographicSize;
+            
             OnFOVChanged?.Invoke(_fov);
             OnViewportSizeChanged?.Invoke(_width, _height);
             OnViewportModeChanged?.Invoke(_viewportMode);
@@ -144,22 +146,22 @@ namespace ModelToPixelArt.Module
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.LeftArrow))
             {
                 Move(Vector2.left * Time.deltaTime);
             }
             
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.RightArrow))
             {
                 Move(Vector2.right * Time.deltaTime);
             }
             
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.UpArrow))
             {
                 Move(Vector2.up * Time.deltaTime);
             }
             
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetKey(KeyCode.DownArrow))
             {
                 Move(Vector2.down * Time.deltaTime);
             }
