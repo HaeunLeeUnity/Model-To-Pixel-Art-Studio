@@ -31,4 +31,4 @@ MonoBehaviour:
   - {r: 0.11372549, g: 0.08235294, b: 0.105882354, a: 1}
   OutLineColor: {r: 0.11372549, g: 0.08235294, b: 0.105882354, a: 1}
   OutLineOption: 1
-  TargetWidth: 128
+  TargetWidth: 64

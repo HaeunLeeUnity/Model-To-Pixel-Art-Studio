@@ -23,9 +23,9 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.05647029, g: 0.061106496, b: 0.084905684, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 2.17
-  m_AmbientMode: 3
-  m_SubtractiveShadowColor: {r: 0.07075471, g: 0.11115644, b: 1, a: 1}
+  m_AmbientIntensity: 1.5
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 4484bcbb4b1b3bb458dbd331f683c086, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: e0fa64a5579184344bb9ee3dcf2ba339, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -2189,7 +2189,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 0.759434, g: 0.7958952, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -2233,7 +2233,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 8638
+  m_ColorTemperature: 6205
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -2252,13 +2252,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.43286234, y: 0.34925142, z: -0.66856134, w: -0.49363905}
+  m_LocalRotation: {x: -0.29197803, y: 0.025074163, z: -0.77868235, w: -0.55477387}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 63.425, y: 391.535, z: 126.912}
+  m_LocalEulerAnglesHint: {x: 21.285, y: 387.268, z: 114.283}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3705,7 +3705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33273c36f054471695c18fc8bd2019ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pixelationOptions: {fileID: 11400000, guid: d42d358db9902f442a2a9dbbf5f09336, type: 2}
+  pixelationOptions: {fileID: 11400000, guid: 3daf1a2100e2933478d1a42b777054f3, type: 2}
 --- !u!114 &634336228
 MonoBehaviour:
   m_ObjectHideFlags: 0
