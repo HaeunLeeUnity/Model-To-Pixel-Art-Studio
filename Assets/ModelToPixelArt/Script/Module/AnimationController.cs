@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using UnityEditor.Animations;
 using UnityEngine;
 
 namespace ModelToPixelArt.Module
@@ -111,6 +112,28 @@ namespace ModelToPixelArt.Module
             Debug.Assert(0 <= index && index <= _clips.Length, $"Animation Index 오류 {index}");
             return _clips[_currentClipIndex].name;
         }
+        
+        private void DisableTransitionExitTime(Animator animator)
+        {
+            var disabledAnimatorController = animator.runtimeAnimatorController as AnimatorController;
+
+            if (disabledAnimatorController == null) return;
+            
+            foreach (var layer in disabledAnimatorController.layers)
+            {
+                var stateMachine = layer.stateMachine;
+
+                foreach (var state in stateMachine.states)
+                {
+                    foreach (var transition in state.state.transitions)
+                    {
+                        transition.hasExitTime = false;
+                    }
+                }
+            }
+
+            animator.runtimeAnimatorController = disabledAnimatorController;
+        }
 
         private IEnumerator Co_FindAnimator()
         {
@@ -124,6 +147,7 @@ namespace ModelToPixelArt.Module
 
                     if (_animator != null)
                     {
+                        DisableTransitionExitTime(_animator);
                         _clips = _animator.runtimeAnimatorController.animationClips;
                         var clipName = GetAnimationClipName(_currentClipIndex);
 
