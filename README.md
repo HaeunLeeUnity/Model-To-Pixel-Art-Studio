@@ -1,4 +1,4 @@
-# Model To PixelArt Studio
+# Model To Pixel Art Studio
 ![image](https://github.com/user-attachments/assets/a65ee227-1d91-457f-b706-e3866032dec0)
 
 ## 개요
