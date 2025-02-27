@@ -13,6 +13,10 @@ Unity Job System 을 사용하여 작업 시간을 최적화했습니다.</br>
 프로젝트를 다운로드하여 유니티 에디터에서 실행합니다.</br>
 StudioScene 에 모델을 배치하고 플레이 모드로 전환합니다.</br>
 변환 또는 애니메이션 변환을 클릭합니다.</br>
+![OneShot](https://github.com/user-attachments/assets/2bbd0f4c-b432-40a0-873f-d49cb55dd818)
+![AnimationShot](https://github.com/user-attachments/assets/0c6ae456-f3dd-4009-8e46-c011d99858ae)
+
+
 </br>
 
 ## 픽셀화 설정</br>
